@@ -103,9 +103,23 @@ export function LiveProjectsPage() {
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight">
               🚀 Live Projects
             </h1>
-            <p className="text-gray-400 text-2xl md:text-3xl max-w-4xl mx-auto leading-relaxed">
+            <p className="text-gray-400 text-2xl md:text-3xl max-w-4xl mx-auto leading-relaxed mb-8">
               Explore all the <span className="text-white font-semibold">production-ready AI systems</span> I've engineered and deployed at scale
             </p>
+            
+            {/* Small Back Button */}
+            <motion.button
+              onClick={() => navigate('/')}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg hover:bg-white/20 transition-colors cursor-pointer"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <ArrowLeft size={18} />
+              Back to Home
+            </motion.button>
           </motion.div>
 
           {/* Projects Grid */}

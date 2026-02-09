@@ -1,11 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ExternalLink, Github, FileText, Eye, Workflow, Database } from 'lucide-react';
+import { ExternalLink, Github, FileText, Eye, Workflow, Database, Rocket } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import cvDetectionImage from '../assets/cv-detection-system.png';
 
 export function Projects() {
+  const navigate = useNavigate();
+
   const projects = [
     {
       title: "LLM-Powered Document Intelligence Platform",
@@ -49,6 +52,70 @@ export function Projects() {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
+        {/* Explore Live Projects - Featured Card Style */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <motion.div
+            onClick={() => navigate('/live-projects')}
+            whileHover={{ scale: 1.02, y: -5 }}
+            whileTap={{ scale: 0.98 }}
+            className="relative group cursor-pointer overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 p-1"
+          >
+            {/* Glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400/50 via-purple-400/50 to-pink-400/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
+            
+            <div className="relative bg-gray-900/90 backdrop-blur-xl rounded-[22px] p-8 lg:p-10 border border-white/10">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                {/* Left - Icon & Badge */}
+                <div className="flex items-center gap-6">
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center shadow-2xl">
+                    <Rocket size={48} className="text-white" />
+                  </div>
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm font-medium mb-2 border border-blue-400/30">
+                      <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+                      Live Demo
+                    </div>
+                    <h3 className="text-3xl lg:text-4xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                      Explore Live Projects
+                    </h3>
+                  </div>
+                </div>
+                
+                {/* Right - Description & Tech */}
+                <div className="text-left">
+                  <p className="text-gray-300 text-lg mb-4 leading-relaxed">
+                    Discover my production-ready AI systems deployed at scale. From LLM-powered document intelligence to real-time computer vision pipelines.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {['Interactive Demos', 'Source Code', 'Performance Metrics', 'Case Studies'].map((tag) => (
+                      <span key={tag} className="px-4 py-2 rounded-full bg-white/10 text-white font-medium text-sm border border-white/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
+              {/* Hover Arrow */}
+              <motion.div
+                className="absolute right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"
+                animate={{ x: [0, 10, 0] }}
+                transition={{ duration: 2, repeat: Infinity }}
+              >
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </motion.div>
+            </div>
+          </motion.div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

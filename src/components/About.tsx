@@ -1,37 +1,13 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Code, Coffee, Heart, Rocket } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Code, Coffee, Heart } from 'lucide-react';
 import profileImage from 'figma:asset/9ad67b5a895bb29b8fdb14d1a81eec90cd1d8060.png';
 
 export function About() {
-  const navigate = useNavigate();
 
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Explore Live Projects Button - Top of About Section */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-8"
-        >
-          <motion.button
-            onClick={() => navigate('/live-projects')}
-            className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-bold text-lg shadow-lg shadow-purple-500/30 overflow-hidden"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-            <span className="relative flex items-center gap-2">
-              <Rocket size={20} />
-              Explore Live Projects
-            </span>
-          </motion.button>
-        </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
