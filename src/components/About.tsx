@@ -53,18 +53,12 @@ export function About() {
               AI Engineer architecting production-grade ML systems from research to deployment
             </h3>
             
-            <p className="text-gray-300 text-lg leading-relaxed">
-              I architect and deploy scalable AI systems that drive measurable business impact. Specializing in LLM-based 
-              intelligent document processing, computer vision pipelines, and end-to-end ML infrastructure—I bridge the gap 
-              between cutting-edge research and production deployment. My work includes designing multi-stage AI workflows, 
-              optimizing model performance at scale, and building robust data engineering foundations.
+            <p className="text-gray-300 text-lg leading-relaxed text-justify">
+              I architect and deploy scalable AI systems that drive measurable business impact across finance and enterprise domains. I specialize in building LLM-powered intelligent document processing, computer vision pipelines, and end-to-end machine learning infrastructure tailored for real-world business workflows.
             </p>
 
-            <p className="text-gray-300 text-lg leading-relaxed">
-              Technical expertise spans the full ML lifecycle: from architecting data pipelines and training deep learning 
-              models (PyTorch, TensorFlow) to deploying containerized ML services via FastAPI and Docker. I've built 
-              LLM-powered document intelligence achieving 95%+ accuracy, real-time computer vision systems using YOLOv4/v5, 
-              and production ML pipelines with XGBoost—all integrated with enterprise databases and cloud infrastructure.
+            <p className="text-gray-300 text-lg leading-relaxed text-justify">
+              I design agentic AI solutions for financial institutions and enterprise organizations, enabling automation in areas such as loan processing, risk analysis, fraud detection, data extraction, and decision intelligence. Beyond finance, I develop AI systems for day-to-day business operations, including process automation, analytics, customer intelligence, and operational optimization.
             </p>
 
             <div className="flex items-center space-x-6 text-gray-400">

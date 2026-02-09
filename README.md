@@ -7,10 +7,6 @@
 
   View the live portfolio: https://tapas15.github.io/myai_portfilio/
 
-  ## 👤 Author
-
-  GitHub: https://github.com/Tapas15
-
   ## Running the code
 
   Run `npm i` to install the dependencies.

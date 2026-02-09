@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Send, MessageSquare, Phone, Instagram } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, MessageSquare, Phone, Instagram, MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -148,10 +148,11 @@ export function Contact() {
               <div className="space-y-3">
                 {[
                   { icon: Mail, label: "tapas.mahanandia@gmail.com", href: "mailto:tapas.mahanandia@gmail.com", color: "from-red-400 to-pink-400" },
-                  { icon: Phone, label: "+91 XXXXXXXXXX", href: "tel:+91XXXXXXXXXX", color: "from-green-400 to-blue-400" },
+                  { icon: Phone, label: "+91 977XXX5125", href: "tel:+919776865125", color: "from-green-400 to-blue-400" },
                   { icon: Github, label: "GitHub Profile", href: "https://github.com/Tapas15", color: "from-gray-400 to-gray-600" },
                   { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/tapas-k-897237b1/", color: "from-blue-400 to-blue-600" },
-                  { icon: Instagram, label: "Instagram", href: "https://instagram.com/tapas_kumar_15", color: "from-pink-400 to-purple-400" }
+                  { icon: Instagram, label: "Instagram", href: "https://instagram.com/tapas_kumar_15", color: "from-pink-400 to-purple-400" },
+                  { icon: MessageCircle, label: "Telegram", href: "https://t.me/Tapas", color: "from-blue-400 to-cyan-400" }
                 ].map((social, index) => (
                   <motion.a
                     key={social.label}

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ExternalLink, Github, FileText, Eye, Workflow, Database } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
+import cvDetectionImage from '../assets/cv-detection-system.png';
 
 export function Projects() {
   const projects = [
@@ -21,6 +22,7 @@ export function Projects() {
       icon: Eye,
       tech: ["YOLOv4/v5", "OpenCV", "PyTorch", "Docker", "FastAPI", "Redis"],
       gradient: "from-blue-400 to-cyan-500",
+      image: cvDetectionImage,
       demo: "#",
       github: "#"
     },
@@ -101,6 +103,16 @@ export function Projects() {
                     {project.description}
                   </CardDescription>
                 </CardHeader>
+                
+                {project.image && (
+                  <div className="px-6 mb-4">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full rounded-lg object-cover h-48 hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 
                 <CardContent className="relative">
                   <div className="flex flex-wrap gap-2">
