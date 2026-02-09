@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Send, MessageSquare, Phone, Instagram, Facebook } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, MessageSquare, Phone, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -147,12 +147,11 @@ export function Contact() {
               <h3 className="text-xl font-bold text-white text-center mb-6">Connect With Me</h3>
               <div className="space-y-3">
                 {[
-                  { icon: Mail, label: "tapaskumar@example.com", href: "mailto:tapaskumar@example.com", color: "from-red-400 to-pink-400" },
+                  { icon: Mail, label: "tapas.mahanandia@gmail.com", href: "mailto:tapas.mahanandia@gmail.com", color: "from-red-400 to-pink-400" },
                   { icon: Phone, label: "+91 XXXXXXXXXX", href: "tel:+91XXXXXXXXXX", color: "from-green-400 to-blue-400" },
                   { icon: Github, label: "GitHub Profile", href: "https://github.com/Tapas15", color: "from-gray-400 to-gray-600" },
                   { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/tapas-k-897237b1/", color: "from-blue-400 to-blue-600" },
-                  { icon: Instagram, label: "Instagram", href: "https://instagram.com/tapas_kumar_15", color: "from-pink-400 to-purple-400" },
-                  { icon: Facebook, label: "Facebook", href: "https://facebook.com/tapas_kumar", color: "from-blue-500 to-blue-700" }
+                  { icon: Instagram, label: "Instagram", href: "https://instagram.com/tapas_kumar_15", color: "from-pink-400 to-purple-400" }
                 ].map((social, index) => (
                   <motion.a
                     key={social.label}
