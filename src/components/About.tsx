@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Code, Coffee, Heart } from 'lucide-react';
-import profileImage from 'figma:asset/9ad67b5a895bb29b8fdb14d1a81eec90cd1d8060.png';
+import profileImage from '../assets/9ad67b5a895bb29b8fdb14d1a81eec90cd1d8060.png';
 
 export function About() {
 
