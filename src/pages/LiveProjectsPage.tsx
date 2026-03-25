@@ -2,7 +2,8 @@ import React from 'react';
 import { motion, useMotionValue } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { NeuralBackground } from '../components/NeuralBackground';
-import { ArrowLeft, Home, Sparkles, ExternalLink, Github, Zap, Brain, Eye, Database, Layers } from 'lucide-react';
+import { ArrowLeft, Home, Sparkles, ExternalLink, Github, Zap } from 'lucide-react';
+import { projects } from '../data/projects';
 
 export function LiveProjectsPage() {
   const navigate = useNavigate();
@@ -19,45 +20,6 @@ export function LiveProjectsPage() {
   const handleButtonClick = () => {
     navigate('/');
   };
-
-  const projects = [
-    {
-      title: "LLM-Powered Document Intelligence Platform",
-      description: "Production-scale document parsing system using LLaMA with RAG and vector embeddings. Achieved 95%+ extraction accuracy processing 10K+ invoices daily.",
-      icon: Brain,
-      gradient: "from-purple-500 via-violet-500 to-blue-500",
-      tech: ["LLaMA", "RAG", "LangChain", "FastAPI", "MongoDB", "Vector DB"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Real-Time Computer Vision Detection System",
-      description: "Scalable object detection pipeline using YOLOv4/v5 optimized for industrial environments. Deployed containerized inference service handling 30 FPS with <50ms latency.",
-      icon: Eye,
-      gradient: "from-blue-500 via-cyan-500 to-teal-500",
-      tech: ["YOLOv4/v5", "OpenCV", "PyTorch", "Docker", "FastAPI", "Redis"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Multi-Stage NLP Intelligence Engine",
-      description: "End-to-end document processing architecture with OCR, entity extraction, and classification. Integrated transformer models for semantic understanding.",
-      icon: Layers,
-      gradient: "from-green-500 via-emerald-500 to-cyan-500",
-      tech: ["Transformers", "Tesseract", "spaCy", "TensorFlow", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Production ML Pipeline Infrastructure",
-      description: "Scalable ETL and ML training infrastructure with XGBoost models. Built automated feature engineering, model versioning, and deployment system.",
-      icon: Database,
-      gradient: "from-orange-500 via-red-500 to-pink-500",
-      tech: ["XGBoost", "Scikit-learn", "MLflow", "Airflow", "SQL Server", "Docker"],
-      liveUrl: "#",
-      githubUrl: "#"
-    }
-  ];
 
   return (
     <div 
