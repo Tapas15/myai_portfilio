@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Code, Coffee, Heart } from 'lucide-react';
 import profileImage from '../assets/9ad67b5a895bb29b8fdb14d1a81eec90cd1d8060.png';
 
 export function About() {
@@ -54,27 +53,23 @@ export function About() {
               Architecting Intelligent Systems That Scale
             </h3>
             
-            <p className="text-gray-300 text-lg leading-relaxed text-justify">
-              I architect and deploy scalable AI systems that drive measurable business impact across finance and enterprise domains. I specialize in building LLM-powered intelligent document processing, computer vision pipelines, and end-to-end machine learning infrastructure tailored for real-world business workflows.
+            <p className="text-gray-300 text-lg leading-relaxed text-justify mb-4">
+              AI Engineer | QA Automation Engineer | Agentic AI, Generative AI & LLM Applications | Python & Automation | FinTech AI Solutions | Transitioning to Full-Stack AI Product Development
             </p>
 
-            <p className="text-gray-300 text-lg leading-relaxed text-justify">
-              I design agentic AI solutions for financial institutions and enterprise organizations, enabling automation in areas such as loan processing, risk analysis, fraud detection, data extraction, and decision intelligence. Beyond finance, I develop AI systems for day-to-day business operations, including process automation, analytics, customer intelligence, and operational optimization.
+            <p className="text-gray-300 text-lg leading-relaxed text-justify mb-4">
+              I design and deploy scalable AI systems focused on real-world applications and production readiness. My work centers around building intelligent, agent-driven systems and LLM-powered solutions that integrate seamlessly into modern business workflows.
             </p>
 
-            <div className="flex items-center space-x-6 text-gray-400">
-              <div className="flex items-center space-x-2">
-                <Code className="text-blue-400" size={20} />
-                <span>ML Architecture</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Coffee className="text-purple-400" size={20} />
-                <span>System Design</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Heart className="text-pink-400" size={20} />
-                <span>Production AI</span>
-              </div>
+            <p className="text-gray-300 text-lg leading-relaxed text-justify mb-4">
+              I actively explore and leverage cutting-edge technologies like Claude and other advanced AI models to accelerate development, improve efficiency, and build next-generation AI products.
+            </p>
+
+            <div className="mb-4">
+              <p className="text-gray-300 text-lg leading-relaxed text-justify">
+                <strong>Core Focus:</strong><br />
+                ML Architecture • System Design • Production AI • Agentic AI • Generative AI
+              </p>
             </div>
 
             <motion.div

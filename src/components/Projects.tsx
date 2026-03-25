@@ -21,7 +21,7 @@ export function Projects() {
           className="mb-16"
         >
           <motion.div
-            onClick={() => navigate('/live-projects')}
+            onClick={() => window.open('https://www.linkedin.com/in/tapas-k-897237b1/', '_blank')}
             whileHover={{ scale: 1.02, y: -5 }}
             whileTap={{ scale: 0.98 }}
             className="relative group cursor-pointer overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 p-1"
@@ -50,7 +50,8 @@ export function Projects() {
                 {/* Right - Description & Tech */}
                 <div className="text-left">
                   <p className="text-gray-300 text-lg mb-4 leading-relaxed">
-                    Discover my production-ready AI systems deployed at scale. From LLM-powered document intelligence to real-time computer vision pipelines.
+                    <strong>Live Projects</strong><br />
+                    Currently, my project deployment is in progress and will be available soon. I will be adding more live projects to my portfolio in the future. For now, you can review my work through the Featured and Posts sections on my LinkedIn profile.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {['Interactive Demos', 'Source Code', 'Performance Metrics', 'Case Studies'].map((tag) => (
