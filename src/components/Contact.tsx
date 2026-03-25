@@ -29,6 +29,34 @@ export function Contact() {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
+        {/* Certifications Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+            Certifications
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-6">
+            Professional certifications and credentials that validate my expertise in AI, machine learning, and software development.
+          </p>
+          <motion.a
+            href="https://www.linkedin.com/in/tapas-k-897237b1/details/certifications/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-lg font-semibold rounded-lg hover:from-yellow-600 hover:to-orange-600 transition-all duration-300"
+          >
+            <Linkedin size={20} />
+            View All Certifications
+          </motion.a>
+        </motion.div>
+
+        {/* Let's Connect Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
